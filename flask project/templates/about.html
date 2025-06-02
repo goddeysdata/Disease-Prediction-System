@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #e3f2fd;
+        }
+        .card {
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 12px;
+        }
+        .card-img-top {
+            border-top-left-radius: 12px;
+            border-top-right-radius: 12px;
+            height: 300px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{{ url_for('index') }}">HealthPredictionSystem</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+                </li>
+                
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="container py-5">
+    <h2 class="text-center mb-5">Meet the System Developers</h2>
+    <div class="row g-4 justify-content-center">
+
+        <!-- anita -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/anita.jpg') }}" class="card-img-top" alt="Anita">
+                <div class="card-body">
+                    <h5 class="card-title">Anita Quaye</h5>
+                    <p class="card-text">
+                        Ms. Quaye is a passionate software developer with a background in IT Management. 
+                        She specializes in front-end design and user experience. She's driven by creativity and usability.
+                    </p>
+                    <p><strong>Email:</strong> anita@gmail.com.com</p>
+                    <p><strong>Contact:</strong> +233 20 123 4567</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- nasara-->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/nasara.jpg') }}" class="card-img-down" alt="Nasara">
+                <div class="card-body">
+                    <h5 class="card-title">Nasara Raja Abubakar </h5>
+                    <p class="card-text">
+                     Ms. Abubakar has a strong foundation in IT Management, Nasara is responsible for backend logic and system security. 
+                        She ensures the system runs reliably and efficiently.
+                    </p>
+                    <p><strong>Email:</strong> nasara@gmail.com</p>
+                    <p><strong>Contact:</strong> +233 24 456 7890</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- leonette -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/leonette.jpg') }}" class="card-img-top" alt="Leonette">
+                <div class="card-body">
+                    <h5 class="card-title">Leonette Ashong</h5>
+                    <p class="card-text">
+                     Ms. Ashong brings her project management and database design skills to the team. 
+                        She manages data integrity and organizes tasks to meet deadlines effectively.
+                    </p>
+                    <p><strong>Email:</strong> leonette@gmail.com</p>
+                    <p><strong>Contact:</strong> +233 26 987 6543</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer class="bg-dark text-white text-center py-3 mt-5">
+    &copy; 2025 HealthPredictionSystem | Designed by Anita, Nasara & Leonette
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
